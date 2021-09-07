@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "weatherpredictor",
+  "version": "1.0.0",
+
+  "name": "Weather Predictor Mod",
+  "description": "Adds a weather predictor item to Minecraft!",
+  "authors": [
+    "IssaMe"
+  ],
+  "contact": {
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/weatherpredictor/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "issame.weatherpredictor.WeatherPredictorMod"
+    ],
+    "client": [
+      "issame.weatherpredictor.WeatherPredictorClientMod"
+    ]
+  },
+  "mixins": [
+    "weatherpredictor.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
